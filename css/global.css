@@ -1,0 +1,20 @@
+:root {
+  --bs-primary: #ff5722;
+}
+
+body {
+  background-color: #f8f2eb;
+  color: #333;
+}
+
+.logo {
+  width: 60px;
+}
+
+nav {
+  font-size: 1.125rem;
+}
+footer,
+.nav-footer li a {
+  color: white;
+}
