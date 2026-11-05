@@ -106,6 +106,52 @@ Christian World View: The page content expresses the virtues of compassion and c
           </div>
         </div>
       </section>
+      <section>
+        <form>
+          <h2>Terms and Conditions</h2>
+
+          <div>
+            <textarea readonly rows="10" cols="50">
+Welcome to our service. Please read these Terms and Conditions carefully before using our application.
+
+1. Acceptance of Terms: By accessing or using our service, you agree to be bound by these terms.
+2. User Conduct: You agree not to misuse the service or help anyone else do so.
+3. Privacy Policy: Your privacy is important to us. Please review our Privacy Policy to understand how we collect and use your information.
+4. Termination: We reserve the right to suspend or terminate access to our service at any time without prior notice.
+    </textarea
+            >
+          </div>
+
+          <fieldset>
+            <legend>Do you accept the Terms and Conditions?</legend>
+
+            <div>
+              <input
+                type="radio"
+                id="accept"
+                name="terms_agreement"
+                value="accept"
+                required
+              />
+              <label for="accept">I accept the terms and conditions</label>
+            </div>
+
+            <div>
+              <input
+                type="radio"
+                id="decline"
+                name="terms_agreement"
+                value="decline"
+              />
+              <label for="decline">I decline the terms and conditions</label>
+            </div>
+          </fieldset>
+
+          <br />
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
     </main>
     <footer id="footernav"></footer>
     <script src="./js/componentLoader.js"></script>

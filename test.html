@@ -38,87 +38,50 @@ Christian World View: The page content expresses the virtues of compassion and c
   <body>
     <header id="share-nav"></header>
     <main>
-      <!-- this section is the her section contains message on the left and picture onthe right -->
-      <section class="container hero-section">
-        <div class="row p-2">
-          <div
-            class="col-sm d-flex justify-content-center align-items-center hero-text"
+      <form>
+        <h2>Terms and Conditions</h2>
+
+        <div>
+          <textarea readonly rows="10" cols="50">
+Welcome to our service. Please read these Terms and Conditions carefully before using our application.
+
+1. Acceptance of Terms: By accessing or using our service, you agree to be bound by these terms.
+2. User Conduct: You agree not to misuse the service or help anyone else do so.
+3. Privacy Policy: Your privacy is important to us. Please review our Privacy Policy to understand how we collect and use your information.
+4. Termination: We reserve the right to suspend or terminate access to our service at any time without prior notice.
+    </textarea
           >
-            <div class="row mb-2">
-              <h1><bold>Find Your new </bold><span>Best Friend</span></h1>
-              <p>
-                Every pet deserves a loving home. We connect shelter animals
-                with caring owners through an easy, transparent, and joyful
-                adoption process.
-              </p>
-              <a class="btn" href="dogs.html">Adopt a Dog</a>
-            </div>
-          </div>
-          <div class="col-sm p-2 hero-image">
-            <img
-              class="img"
-              src="images/home_hero.jpg"
-              alt="Dog photo for hero section"
+        </div>
+
+        <fieldset>
+          <legend>Do you accept the Terms and Conditions?</legend>
+
+          <div>
+            <input
+              type="radio"
+              id="accept"
+              name="terms_agreement"
+              value="accept"
+              required
             />
+            <label for="accept">I accept the terms and conditions</label>
           </div>
-        </div>
-      </section>
-      <!-- this section present main pages of the site in a card format -->
-      <section class="container" aria-label="cards section">
-        <div class="row row-cols-1 row-cols-md-3">
-          <div class="col mb-4">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-              </div>
-            </div>
+
+          <div>
+            <input
+              type="radio"
+              id="decline"
+              name="terms_agreement"
+              value="decline"
+            />
+            <label for="decline">I decline the terms and conditions</label>
           </div>
-          <div class="col mb-4">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-4">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-4">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+        </fieldset>
+
+        <br />
+
+        <button type="submit">Submit</button>
+      </form>
     </main>
     <footer>
       <div>

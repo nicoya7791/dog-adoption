@@ -38,8 +38,9 @@ Christian World View: The page content expresses the virtues of compassion and c
   <body>
     <header id="share-nav"></header>
     <main>
-      <section class="container">
+      <section class="container mt-5" text-center aria-label="Contact Form">
         <div>
+          <h2>We want to here from you!</h2>
           <form id="contactForm" class="mt-5">
             <div class="form-row">
               <div class="form-group col-md-6">
@@ -99,6 +100,158 @@ Christian World View: The page content expresses the virtues of compassion and c
           </form>
         </div>
       </section>
+      <!-- ************************************************* -->
+      <!-- ********surrender a dog form ************
+       ********************************************************-->
+       <div class="container mt-5" text-center aria-label="Surrender a Dog form">
+         <h2>Do you want to surrender a Dog?</h2>
+            <h4>Please fill out the form below</h4>
+       </div>
+      <section class="container bg-white p-3 my-5">
+       
+        <div>
+            
+
+          <form id="contactForm" class="mt-5">
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputName4">Dog's Name</label>
+                <input
+                  type="text"
+                  name="firtName"
+                  class="form-control"
+                  id="inputName4"
+                />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputLastName4">Primary Breed/ Mixed</label>
+                <input
+                  type="text"
+                  name="lastName"
+                  class="form-control"
+                  id="inputLastName4"
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-4">
+                <label for="inputEmail4">Age</label>
+                <input
+                  type="text"
+                  name="email"
+                  class="form-control"
+                  id="inputEmail4"
+                />
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputPhone4">Weight</label>
+                <input
+                  type="text"
+                  name="phone"
+                  class="form-control"
+                  id="inputPhone4"
+                />
+              </div>
+              <!-- radio button  -->
+               <div class="radio-group col-md-4 justify-content-center">
+                <label class="form-label">Gender</label>
+
+                <div class="row justify-content-around">
+                <div class="form-check text-center">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    Male
+                  </label>
+                </div>
+                <div class="form-check text-center">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                  <label class="form-check-label" for="exampleRadios2">
+                    Female
+                  </label>
+                </div>
+              </div>
+                </div>
+                
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Provide more details about the dog and why you want to surrender it</label>
+              <textarea
+                name="textarea"
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="4"
+              ></textarea>
+            </div>
+            <!-- this is for displaying success message
+             also is hidden by default and on submit will be displayed
+             on click will be hidden with jquery  -->
+            <p id="success-message" class="text-success"></p>
+
+            <button type="submit" class="btn text-white">Send Message</button>
+          </form>
+
+      </section>
+
+      <!-- 
+      ******************************************
+      terms and conditions section below 
+       *****************************************-->
+      <div class="container mt-5" text-center aria-label="Terms and Conditions">
+        <h2>Terms and Conditions</h2>
+        <h4>Please read the terms and conditions</h4>
+      </div>
+      <section class="container bg-white p-3 my-5">
+        <form action="#" method="post" id="term-form">
+
+        <div>
+          <textarea readonly rows="10" cols="140" style="width: 100%;">
+              Welcome to our service. Please read these Terms and Conditions carefully before using our application.
+
+              1. Acceptance of Terms: By accessing or using our service, you agree to be bound by these terms.
+              2. User Conduct: You agree not to misuse the service or help anyone else do so.
+              3. Privacy Policy: Your privacy is important to us. Please review our Privacy Policy to understand how we collect and use your information.
+              4. Termination: We reserve the right to suspend or terminate access to our service at any time without prior notice.
+          </textarea
+          >
+        </div>
+
+        <fieldset>
+          <legend>Do you accept the Terms and Conditions?</legend>
+
+          <div>
+            <input
+              type="radio"
+              id="accept"
+              name="terms_agreement"
+              value="accept"
+              required
+            />
+            <label for="accept">I accept the terms and conditions</label>
+          </div>
+
+          <div>
+            <input
+              type="radio"
+              id="decline"
+              name="terms_agreement"
+              value="decline"
+            />
+            <label for="decline">I decline the terms and conditions</label>
+          </div>
+        </fieldset>
+
+        <br />
+
+        <button type="submit">Submit</button>
+      </form>
+
+      
+      </section>
+      <!-- 
+      ******************************************
+      business hours section below
+       *****************************************-->
       <section class="container mt-5 bussiness-hours">
         <table class="table table-striped">
           <thead>
