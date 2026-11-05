@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Buddy",
+    "breed": "Golden Retriever",
+    "age": 3,
+    "gender": "Male"
+  },
+  {
+    "id": 2,
+    "name": "Bella",
+    "breed": "French Bulldog",
+    "age": 2,
+    "gender": "Female"
+  },
+  {
+    "id": 3,
+    "name": "Max",
+    "breed": "German Shepherd",
+    "age": 5,
+    "gender": "Male"
+  },
+  {
+    "id": 4,
+    "name": "Luna",
+    "breed": "Siberian Husky",
+    "age": 4,
+    "gender": "Female"
+  },
+  {
+    "id": 5,
+    "name": "Charlie",
+    "breed": "Beagle",
+    "age": 1,
+    "gender": "Male"
+  },
+  {
+    "id": 6,
+    "name": "Daisy",
+    "breed": "Poodle",
+    "age": 6,
+    "gender": "Female"
+  },
+  {
+    "id": 7,
+    "name": "Rocky",
+    "breed": "Rottweiler",
+    "age": 3,
+    "gender": "Male"
+  }
+]
