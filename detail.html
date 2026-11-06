@@ -67,16 +67,60 @@ Christian World View: The page content expresses the virtues of compassion and c
 
         const dogIndex = JSON.parse(localStorage.getItem("dogIndex"));
         const dogData = data[dogIndex];
+        console.log("Dog index:", dogData);
         console.log("Dog name:", dogData.name);
         if (dogData) {
+          const dogIdElement = document.querySelector("#id");
           const dogNameElement = document.querySelector("#dogName");
-          console.log("Dog name element:", dogNameElement);
+          const dogBreedElement = document.querySelector("#breed");
+          const dogAgeElement = document.querySelector("#age");
+          const dogGenderElement = document.querySelector("#gender");
+          const dogSizeElement = document.querySelector("#size");
+          const dogSpayedNeuteredElement =
+            document.querySelector("#spayed-neutered");
+          const dogRabiesVaccineElement =
+            document.querySelector("#rabies-vaccine");
+
+          if (dogIdElement) {
+            dogIdElement.textContent = dogData.id;
+          } else {
+            console.error("Dog ID element not found in the DOM");
+          }
           if (dogNameElement) {
             dogNameElement.textContent = dogData.name;
           } else {
             console.error("Dog name element not found in the DOM");
           }
-          // Update other elements with dogData as needed
+          if (dogBreedElement) {
+            dogBreedElement.textContent = dogData.breed;
+          } else {
+            console.error("Dog breed element not found in the DOM");
+          }
+          if (dogAgeElement) {
+            dogAgeElement.textContent = dogData.age;
+          } else {
+            console.error("Dog age element not found in the DOM");
+          }
+          if (dogGenderElement) {
+            dogGenderElement.textContent = dogData.gender;
+          } else {
+            console.error("Dog gender element not found in the DOM");
+          }
+          if (dogSizeElement) {
+            dogSizeElement.textContent = dogData.size;
+          } else {
+            console.error("Dog size element not found in the DOM");
+          }
+          if (dogSpayedNeuteredElement) {
+            dogSpayedNeuteredElement.textContent = dogData.spayed_neutered;
+          } else {
+            console.error("Dog spayed/neutered element not found in the DOM");
+          }
+          if (dogRabiesVaccineElement) {
+            dogRabiesVaccineElement.textContent = dogData.rabies_vaccine;
+          } else {
+            console.error("Dog rabies vaccine element not found in the DOM");
+          }
         } else {
           console.error("Dog not found in data");
         }

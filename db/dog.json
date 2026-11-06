@@ -7,8 +7,8 @@
     "gender": "Male",
     "size": "Large",
     "color": "Golden",
-    "Spayed/Neutered": true,
-    "Vaccinated": true
+    "spayed_neutered": true,
+    "rabies_vaccine": true
   },
   {
     "id": 2,
@@ -18,8 +18,8 @@
     "gender": "Female",
     "size": "Small",
     "color": "Fawn",
-    "Spayed/Neutered": true,
-    "Vaccinated": true
+    "spayed_neutered": true,
+    "rabies_vaccine": true
   },
   {
     "id": 3,
@@ -29,8 +29,8 @@
     "gender": "Male",
     "size": "Large",
     "color": "Black and Tan",
-    "Spayed/Neutered": true,
-    "Vaccinated": true
+    "spayed_neutered": false,
+    "rabies_vaccine": true
   },
   {
     "id": 4,
@@ -40,7 +40,7 @@
     "gender": "Female",
     "size": "Large",
     "color": "Gray and White",
-    "Spayed/Neutered": true,
+    "spayed_neutered": true,
     "Vaccinated": true
   },
   {
@@ -51,8 +51,8 @@
     "gender": "Male",
     "size": "Small",
     "color": "Brown",
-    "Spayed/Neutered": true,
-    "Vaccinated": true
+    "spayed_neutered": true,
+    "rabies_vaccine": true
   },
   {
     "id": 6,
@@ -62,8 +62,8 @@
     "gender": "Female",
     "size": "Small",
     "color": "White",
-    "Spayed/Neutered": true,
-    "Vaccinated": true
+    "spayed_neutered": false,
+    "rabies_vaccine": true
   },
   {
     "id": 7,
@@ -73,7 +73,7 @@
     "gender": "Male",
     "size": "Large",
     "color": "Black",
-    "Spayed/Neutered": true,
-    "Vaccinated": true
+    "spayed_neutered": true,
+    "rabies_vaccine": true
   }
 ]
