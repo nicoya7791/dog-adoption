@@ -80,6 +80,7 @@ Christian World View: The page content expresses the virtues of compassion and c
             document.querySelector("#spayed-neutered");
           const dogRabiesVaccineElement =
             document.querySelector("#rabies-vaccine");
+          const dogPhotoElement = document.querySelector("#photo");
 
           if (dogIdElement) {
             dogIdElement.textContent = dogData.id;
@@ -120,6 +121,11 @@ Christian World View: The page content expresses the virtues of compassion and c
             dogRabiesVaccineElement.textContent = dogData.rabies_vaccine;
           } else {
             console.error("Dog rabies vaccine element not found in the DOM");
+          }
+          if (dogPhotoElement) {
+            dogPhotoElement.src = dogData.photo;
+          } else {
+            console.error("Dog photo element not found in the DOM");
           }
         } else {
           console.error("Dog not found in data");

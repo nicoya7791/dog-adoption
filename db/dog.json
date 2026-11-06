@@ -2,13 +2,14 @@
   {
     "id": 1,
     "name": "Buddy",
-    "breed": "Golden Retriever",
+    "breed": "Australian Shepherd ",
     "age": 3,
     "gender": "Male",
     "size": "Large",
     "color": "Golden",
     "spayed_neutered": true,
-    "rabies_vaccine": true
+    "rabies_vaccine": true,
+    "photo": "images/ourdogs/chilling.jpg"
   },
   {
     "id": 2,
@@ -17,31 +18,34 @@
     "age": 2,
     "gender": "Female",
     "size": "Small",
-    "color": "Fawn",
+    "color": "Golden",
     "spayed_neutered": true,
-    "rabies_vaccine": true
+    "rabies_vaccine": true,
+    "photo": "images/ourdogs/cute.jpg"
   },
   {
     "id": 3,
     "name": "Max",
-    "breed": "German Shepherd",
+    "breed": "Pug",
     "age": 5,
     "gender": "Male",
-    "size": "Large",
-    "color": "Black and Tan",
+    "size": "Small",
+    "color": "Black",
     "spayed_neutered": false,
-    "rabies_vaccine": true
+    "rabies_vaccine": true,
+    "photo": "images/ourdogs/sad.jpg"
   },
   {
     "id": 4,
     "name": "Lupa",
-    "breed": "Siberian Husky",
+    "breed": "Border Collie",
     "age": 4,
     "gender": "Female",
     "size": "Large",
-    "color": "Gray and White",
+    "color": "Black and White",
     "spayed_neutered": true,
-    "Vaccinated": true
+    "rabies_vaccine": true,
+    "photo": "images/ourdogs/flirt.jpg"
   },
   {
     "id": 5,
@@ -52,28 +56,31 @@
     "size": "Small",
     "color": "Brown",
     "spayed_neutered": true,
-    "rabies_vaccine": true
+    "rabies_vaccine": true,
+    "photo": "images/ourdogs/running.jpg"
   },
   {
     "id": 6,
     "name": "Daisy",
-    "breed": "Poodle",
+    "breed": "Yorkshire Terrier",
     "age": 6,
     "gender": "Female",
     "size": "Small",
     "color": "White",
     "spayed_neutered": false,
-    "rabies_vaccine": true
+    "rabies_vaccine": true,
+    "photo": "images/ourdogs/daisy.jpg"
   },
   {
     "id": 7,
     "name": "Rocky",
-    "breed": "Rottweiler",
+    "breed": "Australian Cattle Dog",
     "age": 3,
     "gender": "Male",
     "size": "Large",
-    "color": "Black",
+    "color": "Brown",
     "spayed_neutered": true,
-    "rabies_vaccine": true
+    "rabies_vaccine": true,
+    "photo": "images/ourdogs/rocky.jpg"
   }
 ]
