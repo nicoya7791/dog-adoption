@@ -41,7 +41,7 @@ Christian World View: The page content expresses the virtues of compassion and c
       <section id="dogdetail"></section>
     </main>
     <footer id="footernav"></footer>
-    <script type="module" src="./js/index.js"></script>
+    <!-- <script type="module" src="./js/index.js"></script> -->
     <script src="./js/componentLoader.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -58,13 +58,28 @@ Christian World View: The page content expresses the virtues of compassion and c
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    <script>
+    <script type="module">
+      import data from "./db/dog.json" with { type: "json" };
+
       document.addEventListener("DOMContentLoaded", () => {
-        fetch("./components/dogdetail.html")
-          .then((res) => res.text())
-          .then((data) => {
-            document.getElementById("dogdetail").innerHTML = data;
-          });
+        // Your DOM-dependent code goes here
+        console.log("The DOM is fully loaded and parsed!");
+
+        const dogIndex = JSON.parse(localStorage.getItem("dogIndex"));
+        const dogData = data[dogIndex];
+        console.log("Dog name:", dogData.name);
+        if (dogData) {
+          const dogNameElement = document.querySelector("#dogName");
+          console.log("Dog name element:", dogNameElement);
+          if (dogNameElement) {
+            dogNameElement.textContent = dogData.name;
+          } else {
+            console.error("Dog name element not found in the DOM");
+          }
+          // Update other elements with dogData as needed
+        } else {
+          console.error("Dog not found in data");
+        }
       });
     </script>
   </body>

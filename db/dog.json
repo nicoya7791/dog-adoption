@@ -4,48 +4,76 @@
     "name": "Buddy",
     "breed": "Golden Retriever",
     "age": 3,
-    "gender": "Male"
+    "gender": "Male",
+    "size": "Large",
+    "color": "Golden",
+    "Spayed/Neutered": true,
+    "Vaccinated": true
   },
   {
     "id": 2,
     "name": "Bella",
     "breed": "French Bulldog",
     "age": 2,
-    "gender": "Female"
+    "gender": "Female",
+    "size": "Small",
+    "color": "Fawn",
+    "Spayed/Neutered": true,
+    "Vaccinated": true
   },
   {
     "id": 3,
     "name": "Max",
     "breed": "German Shepherd",
     "age": 5,
-    "gender": "Male"
+    "gender": "Male",
+    "size": "Large",
+    "color": "Black and Tan",
+    "Spayed/Neutered": true,
+    "Vaccinated": true
   },
   {
     "id": 4,
-    "name": "Luna",
+    "name": "Lupa",
     "breed": "Siberian Husky",
     "age": 4,
-    "gender": "Female"
+    "gender": "Female",
+    "size": "Large",
+    "color": "Gray and White",
+    "Spayed/Neutered": true,
+    "Vaccinated": true
   },
   {
     "id": 5,
     "name": "Charlie",
     "breed": "Beagle",
     "age": 1,
-    "gender": "Male"
+    "gender": "Male",
+    "size": "Small",
+    "color": "Brown",
+    "Spayed/Neutered": true,
+    "Vaccinated": true
   },
   {
     "id": 6,
     "name": "Daisy",
     "breed": "Poodle",
     "age": 6,
-    "gender": "Female"
+    "gender": "Female",
+    "size": "Small",
+    "color": "White",
+    "Spayed/Neutered": true,
+    "Vaccinated": true
   },
   {
     "id": 7,
     "name": "Rocky",
     "breed": "Rottweiler",
     "age": 3,
-    "gender": "Male"
+    "gender": "Male",
+    "size": "Large",
+    "color": "Black",
+    "Spayed/Neutered": true,
+    "Vaccinated": true
   }
 ]

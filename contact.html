@@ -110,7 +110,7 @@ Christian World View: The page content expresses the virtues of compassion and c
       <section class="container bg-white p-3 my-5">
        
         <div>
-          <form id="contactForm" class="mt-5">
+          <form id="surrenderForm" class="mt-5">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <label for="inputName4">Dog's Name</label>
@@ -191,15 +191,15 @@ Christian World View: The page content expresses the virtues of compassion and c
       </section>
 
       <!-- 
-      ******************************************
+      ********************************************************************************************
       terms and conditions section below 
-       *****************************************-->
+       ******************************************************************************************-->
       <div class="container mt-5" text-center aria-label="Terms and Conditions">
         <h2>Terms and Conditions</h2>
         <h4>Please read the terms and conditions</h4>
       </div>
       <section class="container bg-white p-3 my-5">
-        <form action="mailto:henry.blandon@yahoo.com" method="post" enctype="text/plain"id="term-form">
+        <form action="mailto:example@example.com" method="post" enctype="text/plain" id="term-form">
 
         <div>
           <textarea readonly rows="10" cols="140" style="width: 100%;">
@@ -296,6 +296,43 @@ Christian World View: The page content expresses the virtues of compassion and c
     <footer id="footernav"></footer>
     <script type="module" src="./js/index.js"></script>
     <script src="./js/componentLoader.js"></script>
+    <!-- below is the javascript for this file -->
+    <script>
+       const form = document.querySelector("#surrenderForm");
+
+        form.addEventListener("submit", async function (e) {
+          e.preventDefault(); // Stop the page from reloading
+
+          // get the form input values in object format
+          const formData = new FormData(form);
+          try {
+          // Send the POST request to httpbin
+          const response = await fetch("https://httpbin.org/post", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json", // Sending data as JSON
+            },
+            body: JSON.stringify(dataObject),
+          });
+
+          // Parse the JSON response returned by httpbin
+          const result = await response.json();
+          const data = JSON.parse(result.data); // Parse the echoed data
+
+          console.log("Response from httpbin:", data);
+
+          // Display the echoed data in the pre element
+        } catch (error) {}
+        
+          // clear the form fields after submission
+          $(form)
+            .find("input:text, input:password, input[type=email], textarea, select")
+            .val("");
+
+          $(form).find('input[type="radio"]').prop('checked', false);
+        });
+    </script>
+    <!-- Ends script for forms -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

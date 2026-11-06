@@ -78,20 +78,3 @@ function handleHide(element) {
   });
   element.removeAttribute("style");
 }
-
-//CLEAR FORM
-// The form.reset() does not work on chrome brower
-// To demostrate looping im using foreach in an array of input elements
-//****************************************************** */
-// function clearFormManually(form) {
-//   const inputs = form.querySelectorAll("input");
-//   const textArea = form.querySelector("textarea");
-
-//   //array fo input plus text area message
-//   const AllInputs = Array.from(inputs);
-//   AllInputs.push(textArea);
-//   // assign an empty string to each input value
-//   AllInputs.forEach((element) => {
-//     element.value = "";
-//   });
-// }

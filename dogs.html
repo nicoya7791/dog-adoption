@@ -49,7 +49,7 @@
             <div class="card" aria-label="dog card information">
                 <div class="card-image"><img src="images/ourdogs/chilling.jpg" alt="dog picture" aria-label="dog image"></div>
                 <div class="info">
-                    <h4 data-name="Buddy">My name is Buddy</b></h4>
+                    <h4 data-name="Buddy" data-index="0">My name is Buddy</b></h4>
                     <p>You like my eye
                     </p>
                     <a href="./detail.html" class="btn">Adopt Me</a>
@@ -58,7 +58,7 @@
             <div class="card" aria-label="dog card information">
                 <div class="card-image"><img src="images/ourdogs/couple.jpg" alt="dog picture" aria-label="dog image"></div>
                 <div class="info">
-                    <h4 data-name="Rocky and Roxy">We are Rocky and Roxy</b></h4>
+                    <h4 data-name="Rocky" data-index="6">We are Rocky</b></h4>
                     <p>We will make you happy
                     </p>
                     <a href="./detail.html" class="btn">Adopt Me</a>
@@ -67,7 +67,7 @@
             <div class="card" aria-label="dog card information">
                 <div class="card-image"><img src="images/ourdogs/cute.jpg" alt="dog picture" aria-label="dog image"> </div>
                 <div class="info">
-                    <h4 data-name="Bella">My name is Bella</b></h4>
+                    <h4 data-name="Bella" data-index="1">My name is Bella</b></h4>
                     <p>I like to relax
                     </p>
                     <a href="./detail.html" class="btn">Adopt Me</a>
@@ -76,7 +76,7 @@
             <div class="card" aria-label="dog card information">
                 <div class="card-image"><img src="images/ourdogs/sad.jpg" alt="dog picture" aria-label="dog image"></div>
                 <div class="info">
-                    <h4 data-name="Max">My name is Max</b></h4>
+                    <h4 data-name="Max" data-index="2">My name is Max</b></h4>
                     <p>I need a friend
                     </p>
                     <a href="detail.html" class="btn">Adopt Me</a>
@@ -85,7 +85,7 @@
             <div class="card" aria-label="dog card information">
                 <div class="card-image"><img src="images/ourdogs/flirt.jpg" alt="dog picture" aria-label="dog image"></div>
                 <div class="info">
-                    <h4 data-name="Luna">My name is Luna</b></h4>
+                    <h4 data-name="Lupa" data-index="3">My name is Lupa</b></h4>
                     <p>I flirt all the time
                     </p>
                     <a href="./detail.html" class="btn">Adopt Me</a>
@@ -94,7 +94,7 @@
             <div class="card" aria-label="dog card information">
                 <div class="card-image"><img src="images/ourdogs/running.jpg" alt="dog picture" aria-label="dog image"></div>
                 <div class="info">
-                    <h4 data-name="Charlie">My name is Charlie</b></h4>
+                    <h4 data-name="Daisy" data-index="5">My name is Daisy</b></h4>
                     <p>I like outdoors
                     </p>
                     <a href="./detail.html" class="btn">Adopt Me</a>
@@ -112,7 +112,19 @@
     </footer>
     <script src="./js/componentLoader.js"></script>
     <script type="module" src="./js/index.js"></script>
-
+    <script type="module">
+      // add event listener to all buttons
+      const buttons = document.querySelectorAll('.btn');
+      buttons.forEach(button => {
+        button.addEventListener('click', (event) => {
+          // get the dog name from the h4 element
+          const dogindex = event.target.parentElement.querySelector('h4').dataset.index;
+          // save the dog name to local storage
+          localStorage.setItem('dogIndex', JSON.stringify(dogindex));
+        });
+      });
+      
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
