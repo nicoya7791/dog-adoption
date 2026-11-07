@@ -63,12 +63,9 @@ Christian World View: The page content expresses the virtues of compassion and c
 
       document.addEventListener("DOMContentLoaded", () => {
         // Your DOM-dependent code goes here
-        console.log("The DOM is fully loaded and parsed!");
 
         const dogIndex = JSON.parse(localStorage.getItem("dogIndex"));
         const dogData = data[dogIndex];
-        console.log("Dog index:", dogData);
-        console.log("Dog name:", dogData.name);
         if (dogData) {
           const dogIdElement = document.querySelector("#id");
           const dogNameElement = document.querySelector("#dogName");

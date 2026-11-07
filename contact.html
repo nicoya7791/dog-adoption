@@ -306,7 +306,6 @@ Christian World View: The page content expresses the virtues of compassion and c
           // get the form input values in object format
           const formData = new FormData(form);
           const dataObject = Object.fromEntries(formData.entries());
-          console.log("Form Data:", dataObject); // Log the FormData object
           try {
           // Send the POST request to httpbin
           const response = await fetch("https://httpbin.org/post", {
@@ -319,7 +318,6 @@ Christian World View: The page content expresses the virtues of compassion and c
 
           // Parse the JSON response returned by httpbin
           const result = await response.json();
-          console.log("Response from httpbin:", result.data);
           const data = JSON.parse(result.data); // Parse the echoed data
 
 
