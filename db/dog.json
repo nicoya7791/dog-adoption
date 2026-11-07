@@ -69,7 +69,7 @@
     "color": "White",
     "spayed_neutered": false,
     "rabies_vaccine": true,
-    "photo": "images/ourdogs/daisy.jpg"
+    "photo": "images/ourdogs/running.jpg"
   },
   {
     "id": 7,
@@ -81,6 +81,6 @@
     "color": "Brown",
     "spayed_neutered": true,
     "rabies_vaccine": true,
-    "photo": "images/ourdogs/rocky.jpg"
+    "photo": "images/ourdogs/couple.jpg"
   }
 ]
