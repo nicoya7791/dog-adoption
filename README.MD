@@ -29,3 +29,8 @@ it is intended for the user to send a message with any question or comments
 
 - eventually will provide details of a dog with changes the dog's information dinamically
 - will add more information regarding adotions requirements
+
+### Two forms added to the project, surrender a dog and terms and conditions
+
+- Surrender a dog form uses [https://httpbin.org/post](https://httpbin.org/post) which send the form
+  data as a response which then we can utilize if is needed.

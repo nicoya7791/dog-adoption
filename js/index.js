@@ -34,6 +34,7 @@ animate(chars, {
 // fetch the form and display error in the console.
 var pageTitle = document.title;
 
+//contact page script
 if (pageTitle === "contact") {
   // add event listener to the submit button
   const form = document.querySelector("#contactForm");
